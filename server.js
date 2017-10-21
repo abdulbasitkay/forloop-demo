@@ -12,7 +12,7 @@ app.use(bodyparser.urlencoded({ extended:true}));
 app.use(bodyparser.json());
 app.use(cros());
 
-app.get('/', (req, res)=>{
+app.get('/forloop', (req, res)=>{
  res.send("it works");
 });
 
