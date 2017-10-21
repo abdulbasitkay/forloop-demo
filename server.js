@@ -22,8 +22,8 @@ app.get('/forloop', (req, res)=>{
 
  app.get('/sum/:a/:b',(req,res)=>{
 
-    let a = body.params.a;
-    let b = body.params.b;
+    let a = req.body.params.a;
+    let b = req.body.params.b;
 
     sum = a+b;
 
