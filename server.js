@@ -16,6 +16,21 @@ app.get('/forloop', (req, res)=>{
  res.send("it works");
 });
 
+ function print(a,b,c,d) {
+   let sum = a+b+c+d;
+ }
+
+ app.get('/sum/:a:b',(req,res)=>{
+
+    let a = body.params.a;
+    let b = body.params.b;
+
+    sum = a+b;
+
+    res.send(sum);
+
+ });
+
 app.listen(port, () => {
     console.log(`running on ${port}`)
 });
