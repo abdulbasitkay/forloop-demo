@@ -26,10 +26,10 @@ app.get('/hello', (req, res)=>{
 
  app.get('/sum/:a/:b',(req,res)=>{
 
-    let a = req.body.params.a;
-    let b = req.body.params.b;
+    let a = req.path.params.a;
+    let b = req.path.params.b;
 
-    sum = a+b;
+    let sum = a+b;
 
     res.send(sum);
 
