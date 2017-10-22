@@ -16,6 +16,10 @@ app.get('/forloop', (req, res)=>{
  res.send("it works");
 });
 
+app.get('/hello', (req, res)=>{
+  res.send("hi");
+ });
+
  function print(a,b,c,d) {
    let sum = a+b+c+d;
  }
