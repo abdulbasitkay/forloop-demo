@@ -35,6 +35,10 @@ app.get('/hello', (req, res)=>{
 
  });
 
+app.get('/new', (req, res)=>{
+  res.send("What's that?");
+ });
+
 app.listen(port, () => {
     console.log(`running on ${port}`)
 });
